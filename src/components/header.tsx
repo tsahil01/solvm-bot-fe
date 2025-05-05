@@ -1,3 +1,4 @@
+import { FaTelegram } from "react-icons/fa";
 import { Button } from "./ui/button";
 
 export function Header() {
@@ -7,15 +8,10 @@ export function Header() {
                 <div className="flex items-center space-x-2">
                     <span className="font-semibold text-slate-900 dark:text-white">Solana VM</span>
                 </div>
-                <nav className="hidden md:flex items-center space-x-8">
-                    <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">Features</a>
-                    <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">Pricing</a>
-                    <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">Documentation</a>
-                    <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">About</a>
-                </nav>
-                <Button variant="outline" size="sm" className="rounded-full">
+                <Button variant="outline" size="sm" className="rounded-full"
+                    onClick={() => window.open("https://t.me/solvmbot", "_blank")} >
                     Try it out
-                    
+                    <FaTelegram className="ml-2 h-4 w-4" />
                 </Button>
             </div>
         </div>
