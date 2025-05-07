@@ -89,7 +89,8 @@ function App() {
                                     Start Bot on
                                     <FaTelegram className="ml-1 h-4 w-4" />
                                 </Button>
-                                <Button variant="outline" size="lg" className="rounded-md px-6 border-[#d8d2bd] text-[#5d493d] hover:bg-[#e8e2cd]/50 dark:border-[#7d5ba6]/30 dark:text-[#e8e2cd] dark:hover:bg-[#433f35]/80">
+                                <Button variant="outline" size="lg" className="rounded-md px-6 border-[#d8d2bd] text-[#5d493d] hover:bg-[#e8e2cd]/50 dark:border-[#7d5ba6]/30 dark:text-[#e8e2cd] dark:hover:bg-[#433f35]/80"
+                                onClick={() => window.open("https://github.com/tsahil01/sol-vm", "_blank")}>
                                     Github
                                     <FaGithub className="ml-1 h-4 w-4" />
                                 </Button>
